@@ -56,19 +56,18 @@
     "d3adc0d3 (https://github.com/d3adc0d3)",
     "James Crosby (https://github.com/autopulated)"
   ],
-  "main": "./lib/xml2js",
+  "main": "./src/xml2js",
   "files": [
-    "lib"
+    "src"
   ],
   "directories": {
-    "lib": "./lib"
+    "src": "./src"
   },
   "scripts": {
-    "build": "cake build",
     "test": "zap",
     "coverage": "nyc npm test && nyc report",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
-    "doc": "cake doc"
+    "doc": "docco src/xml2js.js"
   },
   "repository": {
     "type": "git",
@@ -79,7 +78,6 @@
     "xmlbuilder": "~11.0.0"
   },
   "devDependencies": {
-    "coffeescript": ">=2.7",
     "coveralls": "^3.0.1",
     "diff": ">=1.0.8",
     "docco": ">=0.6.2",
